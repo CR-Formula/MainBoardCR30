@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = Main Board Rework CR30
+TARGET = MainBoardReworkCR30
 
 
 ######################################
@@ -36,6 +36,16 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Core/Src/led_blink.c \
+Core/Src/hw_test_adc.c \
+Core/Src/hw_test_can.c \
+Core/Src/hw_test_dma.c \
+Core/Src/hw_test_i2c.c \
+Core/Src/hw_test_lora.c \
+Core/Src/hw_test_sd.c \
+Core/Src/hw_test_uart3.c \
+Core/Src/sd_log.c \
+Core/Src/hw_tests.c \
 Core/Src/main.c \
 Core/Src/freertos.c \
 Core/Src/stm32f4xx_it.c \

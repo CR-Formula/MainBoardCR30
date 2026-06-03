@@ -26,14 +26,374 @@
       "-ffunction-sections",
       "-g",
       "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/led_blink.lst",
+      "-o",
+      "build/led_blink.o",
+      "Core/Src/led_blink.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/led_blink.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/led_blink.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_adc.lst",
+      "-o",
+      "build/hw_test_adc.o",
+      "Core/Src/hw_test_adc.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_adc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_adc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_can.lst",
+      "-o",
+      "build/hw_test_can.o",
+      "Core/Src/hw_test_can.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_can.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_can.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_dma.lst",
+      "-o",
+      "build/hw_test_dma.o",
+      "Core/Src/hw_test_dma.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_dma.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_dma.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_i2c.lst",
+      "-o",
+      "build/hw_test_i2c.o",
+      "Core/Src/hw_test_i2c.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_i2c.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_i2c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_lora.lst",
+      "-o",
+      "build/hw_test_lora.o",
+      "Core/Src/hw_test_lora.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_lora.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_lora.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_sd.lst",
+      "-o",
+      "build/hw_test_sd.o",
+      "Core/Src/hw_test_sd.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_sd.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_sd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_test_uart3.lst",
+      "-o",
+      "build/hw_test_uart3.o",
+      "Core/Src/hw_test_uart3.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_test_uart3.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_test_uart3.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/sd_log.lst",
+      "-o",
+      "build/sd_log.o",
+      "Core/Src/sd_log.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/sd_log.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/sd_log.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/hw_tests.lst",
+      "-o",
+      "build/hw_tests.o",
+      "Core/Src/hw_tests.c"
+    ],
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/hw_tests.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/hw_tests.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfpu=fpv4-sp-d16",
+      "-mfloat-abi=hard",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F415xx",
+      "-ICore/Inc",
+      "-IFATFS/Target",
+      "-IFATFS/App",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/include",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+      "-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+      "-IMiddlewares/Third_Party/FatFs/src",
+      "-IDrivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
       "-Wa,-a,-ad,-alms=build/main.lst",
       "-o",
       "build/main.o",
       "Core/Src/main.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/main.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/main.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/main.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/main.o"
   },
   {
     "arguments": [
@@ -67,9 +427,9 @@
       "build/freertos.o",
       "Core/Src/freertos.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/freertos.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/freertos.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/freertos.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/freertos.o"
   },
   {
     "arguments": [
@@ -103,9 +463,9 @@
       "build/stm32f4xx_it.o",
       "Core/Src/stm32f4xx_it.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/stm32f4xx_it.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_it.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/stm32f4xx_it.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_it.o"
   },
   {
     "arguments": [
@@ -139,9 +499,9 @@
       "build/stm32f4xx_hal_msp.o",
       "Core/Src/stm32f4xx_hal_msp.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/stm32f4xx_hal_msp.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_msp.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/stm32f4xx_hal_msp.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_msp.o"
   },
   {
     "arguments": [
@@ -175,9 +535,9 @@
       "build/stm32f4xx_hal_timebase_tim.o",
       "Core/Src/stm32f4xx_hal_timebase_tim.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/stm32f4xx_hal_timebase_tim.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_timebase_tim.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/stm32f4xx_hal_timebase_tim.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_timebase_tim.o"
   },
   {
     "arguments": [
@@ -211,9 +571,9 @@
       "build/bsp_driver_sd.o",
       "FATFS/Target/bsp_driver_sd.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/FATFS/Target/bsp_driver_sd.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/bsp_driver_sd.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/FATFS/Target/bsp_driver_sd.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/bsp_driver_sd.o"
   },
   {
     "arguments": [
@@ -247,9 +607,9 @@
       "build/sd_diskio.o",
       "FATFS/Target/sd_diskio.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/FATFS/Target/sd_diskio.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/sd_diskio.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/FATFS/Target/sd_diskio.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/sd_diskio.o"
   },
   {
     "arguments": [
@@ -283,9 +643,9 @@
       "build/fatfs_platform.o",
       "FATFS/Target/fatfs_platform.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/FATFS/Target/fatfs_platform.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/fatfs_platform.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/FATFS/Target/fatfs_platform.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/fatfs_platform.o"
   },
   {
     "arguments": [
@@ -319,9 +679,9 @@
       "build/fatfs.o",
       "FATFS/App/fatfs.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/FATFS/App/fatfs.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/fatfs.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/FATFS/App/fatfs.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/fatfs.o"
   },
   {
     "arguments": [
@@ -355,9 +715,9 @@
       "build/stm32f4xx_hal_tim.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_tim.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_tim.o"
   },
   {
     "arguments": [
@@ -391,9 +751,9 @@
       "build/stm32f4xx_hal_tim_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_tim_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_tim_ex.o"
   },
   {
     "arguments": [
@@ -427,9 +787,9 @@
       "build/stm32f4xx_hal_adc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_adc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_adc.o"
   },
   {
     "arguments": [
@@ -463,9 +823,9 @@
       "build/stm32f4xx_hal_adc_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_adc_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_adc_ex.o"
   },
   {
     "arguments": [
@@ -499,9 +859,9 @@
       "build/stm32f4xx_ll_adc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_ll_adc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_ll_adc.o"
   },
   {
     "arguments": [
@@ -535,9 +895,9 @@
       "build/stm32f4xx_hal_rcc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_rcc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_rcc.o"
   },
   {
     "arguments": [
@@ -571,9 +931,9 @@
       "build/stm32f4xx_hal_rcc_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_rcc_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_rcc_ex.o"
   },
   {
     "arguments": [
@@ -607,9 +967,9 @@
       "build/stm32f4xx_hal_flash.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_flash.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_flash.o"
   },
   {
     "arguments": [
@@ -643,9 +1003,9 @@
       "build/stm32f4xx_hal_flash_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_flash_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_flash_ex.o"
   },
   {
     "arguments": [
@@ -679,9 +1039,9 @@
       "build/stm32f4xx_hal_flash_ramfunc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_flash_ramfunc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_flash_ramfunc.o"
   },
   {
     "arguments": [
@@ -715,9 +1075,9 @@
       "build/stm32f4xx_hal_gpio.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_gpio.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_gpio.o"
   },
   {
     "arguments": [
@@ -751,9 +1111,9 @@
       "build/stm32f4xx_hal_dma_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_dma_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_dma_ex.o"
   },
   {
     "arguments": [
@@ -787,9 +1147,9 @@
       "build/stm32f4xx_hal_dma.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_dma.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_dma.o"
   },
   {
     "arguments": [
@@ -823,9 +1183,9 @@
       "build/stm32f4xx_hal_pwr.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_pwr.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_pwr.o"
   },
   {
     "arguments": [
@@ -859,9 +1219,9 @@
       "build/stm32f4xx_hal_pwr_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_pwr_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_pwr_ex.o"
   },
   {
     "arguments": [
@@ -895,9 +1255,9 @@
       "build/stm32f4xx_hal_cortex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_cortex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_cortex.o"
   },
   {
     "arguments": [
@@ -931,9 +1291,9 @@
       "build/stm32f4xx_hal.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal.o"
   },
   {
     "arguments": [
@@ -967,9 +1327,9 @@
       "build/stm32f4xx_hal_exti.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_exti.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_exti.o"
   },
   {
     "arguments": [
@@ -1003,9 +1363,9 @@
       "build/stm32f4xx_hal_can.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_can.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_can.o"
   },
   {
     "arguments": [
@@ -1039,9 +1399,9 @@
       "build/stm32f4xx_hal_i2c.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_i2c.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_i2c.o"
   },
   {
     "arguments": [
@@ -1075,9 +1435,9 @@
       "build/stm32f4xx_hal_i2c_ex.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_i2c_ex.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_i2c_ex.o"
   },
   {
     "arguments": [
@@ -1111,9 +1471,9 @@
       "build/stm32f4xx_ll_sdmmc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_ll_sdmmc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_ll_sdmmc.o"
   },
   {
     "arguments": [
@@ -1147,9 +1507,9 @@
       "build/stm32f4xx_hal_sd.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_sd.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_sd.o"
   },
   {
     "arguments": [
@@ -1183,9 +1543,9 @@
       "build/stm32f4xx_hal_mmc.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_mmc.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_mmc.o"
   },
   {
     "arguments": [
@@ -1219,9 +1579,9 @@
       "build/stm32f4xx_hal_spi.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_spi.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_spi.o"
   },
   {
     "arguments": [
@@ -1255,9 +1615,9 @@
       "build/stm32f4xx_hal_uart.o",
       "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stm32f4xx_hal_uart.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stm32f4xx_hal_uart.o"
   },
   {
     "arguments": [
@@ -1291,9 +1651,9 @@
       "build/system_stm32f4xx.o",
       "Core/Src/system_stm32f4xx.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/system_stm32f4xx.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/system_stm32f4xx.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/system_stm32f4xx.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/system_stm32f4xx.o"
   },
   {
     "arguments": [
@@ -1327,9 +1687,9 @@
       "build/diskio.o",
       "Middlewares/Third_Party/FatFs/src/diskio.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FatFs/src/diskio.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/diskio.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FatFs/src/diskio.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/diskio.o"
   },
   {
     "arguments": [
@@ -1363,9 +1723,9 @@
       "build/ff.o",
       "Middlewares/Third_Party/FatFs/src/ff.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FatFs/src/ff.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/ff.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FatFs/src/ff.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/ff.o"
   },
   {
     "arguments": [
@@ -1399,9 +1759,9 @@
       "build/ff_gen_drv.o",
       "Middlewares/Third_Party/FatFs/src/ff_gen_drv.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/ff_gen_drv.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/ff_gen_drv.o"
   },
   {
     "arguments": [
@@ -1435,9 +1795,9 @@
       "build/syscall.o",
       "Middlewares/Third_Party/FatFs/src/option/syscall.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FatFs/src/option/syscall.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/syscall.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FatFs/src/option/syscall.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/syscall.o"
   },
   {
     "arguments": [
@@ -1471,9 +1831,9 @@
       "build/ccsbcs.o",
       "Middlewares/Third_Party/FatFs/src/option/ccsbcs.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/ccsbcs.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/ccsbcs.o"
   },
   {
     "arguments": [
@@ -1507,9 +1867,9 @@
       "build/croutine.o",
       "Middlewares/Third_Party/FreeRTOS/Source/croutine.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/croutine.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/croutine.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/croutine.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/croutine.o"
   },
   {
     "arguments": [
@@ -1543,9 +1903,9 @@
       "build/event_groups.o",
       "Middlewares/Third_Party/FreeRTOS/Source/event_groups.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/event_groups.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/event_groups.o"
   },
   {
     "arguments": [
@@ -1579,9 +1939,9 @@
       "build/list.o",
       "Middlewares/Third_Party/FreeRTOS/Source/list.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/list.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/list.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/list.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/list.o"
   },
   {
     "arguments": [
@@ -1615,9 +1975,9 @@
       "build/queue.o",
       "Middlewares/Third_Party/FreeRTOS/Source/queue.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/queue.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/queue.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/queue.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/queue.o"
   },
   {
     "arguments": [
@@ -1651,9 +2011,9 @@
       "build/stream_buffer.o",
       "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/stream_buffer.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/stream_buffer.o"
   },
   {
     "arguments": [
@@ -1687,9 +2047,9 @@
       "build/tasks.o",
       "Middlewares/Third_Party/FreeRTOS/Source/tasks.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/tasks.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/tasks.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/tasks.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/tasks.o"
   },
   {
     "arguments": [
@@ -1723,9 +2083,9 @@
       "build/timers.o",
       "Middlewares/Third_Party/FreeRTOS/Source/timers.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/timers.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/timers.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/timers.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/timers.o"
   },
   {
     "arguments": [
@@ -1759,9 +2119,9 @@
       "build/cmsis_os2.o",
       "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/cmsis_os2.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/cmsis_os2.o"
   },
   {
     "arguments": [
@@ -1795,9 +2155,9 @@
       "build/heap_4.o",
       "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/heap_4.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/heap_4.o"
   },
   {
     "arguments": [
@@ -1831,9 +2191,9 @@
       "build/port.o",
       "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/port.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/port.o"
   },
   {
     "arguments": [
@@ -1867,9 +2227,9 @@
       "build/sysmem.o",
       "Core/Src/sysmem.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/sysmem.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/sysmem.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/sysmem.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/sysmem.o"
   },
   {
     "arguments": [
@@ -1903,9 +2263,9 @@
       "build/syscalls.o",
       "Core/Src/syscalls.c"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/Core/Src/syscalls.c",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/syscalls.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/Core/Src/syscalls.c",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/syscalls.o"
   },
   {
     "arguments": [
@@ -1940,8 +2300,8 @@
       "build/startup_stm32f415xx.o",
       "startup_stm32f415xx.s"
     ],
-    "directory": "/home/awigg/Repositories/MainBoardReworkCR30",
-    "file": "/home/awigg/Repositories/MainBoardReworkCR30/startup_stm32f415xx.s",
-    "output": "/home/awigg/Repositories/MainBoardReworkCR30/build/startup_stm32f415xx.o"
+    "directory": "/home/abirky/Repositories/MainBoardCR30",
+    "file": "/home/abirky/Repositories/MainBoardCR30/startup_stm32f415xx.s",
+    "output": "/home/abirky/Repositories/MainBoardCR30/build/startup_stm32f415xx.o"
   }
 ]

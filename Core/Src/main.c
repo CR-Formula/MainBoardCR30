@@ -20,6 +20,8 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "fatfs.h"
+#include "hw_test.h"
+#include "led_blink.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -129,7 +131,8 @@ int main(void)
   MX_SPI2_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-
+  led_blink_init();
+  led_solid();
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -727,6 +730,7 @@ static void MX_GPIO_Init(void)
 void DefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
+  run_all_tests();
   /* Infinite loop */
   for(;;)
   {
