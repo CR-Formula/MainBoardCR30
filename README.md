@@ -5,6 +5,9 @@ This branch contains various tests for the hardware on Main Board.
 
 Due to time constraints, the tests were written by Copilot, and many (if not all) of them **are likely to fail**.  Regardless, this will hopefully be better than nothing, and it should give us a starting point to get Main Board operational.
 
+### Brake Light
+The board will start by attempting to flash the brake lights 10 times in 5 seconds (250 ms on, 250 ms off).
+
 ### Blue LED Blink Codes (Failed Tests)
 The board will ideally turn the blue LED on when it starts running tests.
 

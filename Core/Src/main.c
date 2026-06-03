@@ -22,6 +22,9 @@
 #include "fatfs.h"
 #include "hw_test.h"
 #include "led_blink.h"
+#include "stm32f415xx.h"
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -730,6 +733,12 @@ static void MX_GPIO_Init(void)
 void DefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
+  for (int i = 0; i < 20; i++)
+  {
+    HAL_GPIO_TogglePin(GPIOC, 13);
+    HAL_Delay(250);
+  }
+
   run_all_tests();
   /* Infinite loop */
   for(;;)
