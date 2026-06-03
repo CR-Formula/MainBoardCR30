@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ST-Link Debug",
+            "cwd": "${workspaceFolder}",
+            "preLaunchCommands": ["make -j8"],
+            "executable": "./build/MainBoardReworkCR30.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F415",
+            "interface": "swd",
+        },
+        {
+            "name": "ST-Link Attach",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/MainBoardReworkCR30.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F415",
+            "interface": "swd",
+        },
+        {
+            "name": "J-Link Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/MainBoardReworkCR30.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "rtos": "FreeRTOS",
+            "device": "STM32F415RG",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "preLaunchCommands": ["make -j8"]
+          },
+          {
+            "name": "J-Link Attach",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/MainBoardReworkCR30.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "rtos": "FreeRTOS",
+            "device": "STM32F415RG",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+          }
+    ]
+}
