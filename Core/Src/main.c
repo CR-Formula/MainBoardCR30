@@ -57,12 +57,101 @@ UART_HandleTypeDef huart3;
 UART_HandleTypeDef huart6;
 DMA_HandleTypeDef hdma_usart3_rx;
 
-/* Definitions for Default */
-osThreadId_t DefaultHandle;
-const osThreadAttr_t Default_attributes = {
-  .name = "Default",
+/* Definitions for ADC */
+osThreadId_t ADCHandle;
+const osThreadAttr_t ADC_attributes = {
+  .name = "ADC",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityRealtime7,
+};
+/* Definitions for CAN */
+osThreadId_t CANHandle;
+const osThreadAttr_t CAN_attributes = {
+  .name = "CAN",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityRealtime6,
+};
+/* Definitions for LogSD */
+osThreadId_t LogSDHandle;
+const osThreadAttr_t LogSD_attributes = {
+  .name = "LogSD",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityRealtime3,
+};
+/* Definitions for GPS */
+osThreadId_t GPSHandle;
+const osThreadAttr_t GPS_attributes = {
+  .name = "GPS",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityRealtime2,
+};
+/* Definitions for StatusLED */
+osThreadId_t StatusLEDHandle;
+const osThreadAttr_t StatusLED_attributes = {
+  .name = "StatusLED",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for CarControls */
+osThreadId_t CarControlsHandle;
+const osThreadAttr_t CarControls_attributes = {
+  .name = "CarControls",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityRealtime5,
+};
+/* Definitions for CarDisplay */
+osThreadId_t CarDisplayHandle;
+const osThreadAttr_t CarDisplay_attributes = {
+  .name = "CarDisplay",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityRealtime4,
+};
+/* Definitions for LoRaControls */
+osThreadId_t LoRaControlsHandle;
+const osThreadAttr_t LoRaControls_attributes = {
+  .name = "LoRaControls",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh4,
+};
+/* Definitions for LoRaIMU */
+osThreadId_t LoRaIMUHandle;
+const osThreadAttr_t LoRaIMU_attributes = {
+  .name = "LoRaIMU",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh3,
+};
+/* Definitions for LoRaGPS */
+osThreadId_t LoRaGPSHandle;
+const osThreadAttr_t LoRaGPS_attributes = {
+  .name = "LoRaGPS",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh2,
+};
+/* Definitions for LoRaBattVolt */
+osThreadId_t LoRaBattVoltHandle;
+const osThreadAttr_t LoRaBattVolt_attributes = {
+  .name = "LoRaBattVolt",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh6,
+};
+/* Definitions for LoRaBattTemp */
+osThreadId_t LoRaBattTempHandle;
+const osThreadAttr_t LoRaBattTemp_attributes = {
+  .name = "LoRaBattTemp",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh7,
+};
+/* Definitions for LoRaInverter */
+osThreadId_t LoRaInverterHandle;
+const osThreadAttr_t LoRaInverter_attributes = {
+  .name = "LoRaInverter",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh5,
+};
+/* Definitions for LoRaMutex */
+osMutexId_t LoRaMutexHandle;
+const osMutexAttr_t LoRaMutex_attributes = {
+  .name = "LoRaMutex"
 };
 /* USER CODE BEGIN PV */
 
@@ -79,7 +168,19 @@ static void MX_USART6_UART_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI2_Init(void);
-void DefaultTask(void *argument);
+void AdcTask(void *argument);
+void CanTask(void *argument);
+void LogSdTask(void *argument);
+void GpsTask(void *argument);
+void StatusLedTask(void *argument);
+void CarControlsTask(void *argument);
+void CarDisplayTask(void *argument);
+void LoRaControlsTask(void *argument);
+void LoRaImuTask(void *argument);
+void LoRaGpsTask(void *argument);
+void LoRaBattVoltTask(void *argument);
+void LoRaBattTempTask(void *argument);
+void LoRaInverterTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -134,6 +235,9 @@ int main(void)
 
   /* Init scheduler */
   osKernelInitialize();
+  /* Create the mutex(es) */
+  /* creation of LoRaMutex */
+  LoRaMutexHandle = osMutexNew(&LoRaMutex_attributes);
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -152,8 +256,23 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of Default */
-  DefaultHandle = osThreadNew(DefaultTask, NULL, &Default_attributes);
+  
+  // Core Tasks
+  ADCHandle = osThreadNew(AdcTask, NULL, &ADC_attributes);
+  CANHandle = osThreadNew(CanTask, NULL, &CAN_attributes);
+  LogSDHandle = osThreadNew(LogSdTask, NULL, &LogSD_attributes);
+  GPSHandle = osThreadNew(GpsTask, NULL, &GPS_attributes);
+  StatusLEDHandle = osThreadNew(StatusLedTask, NULL, &StatusLED_attributes);
+  CarControlsHandle = osThreadNew(CarControlsTask, NULL, &CarControls_attributes);
+  CarDisplayHandle = osThreadNew(CarDisplayTask, NULL, &CarDisplay_attributes);
+
+  // LoRa Tasks
+  LoRaControlsHandle = osThreadNew(LoRaControlsTask, NULL, &LoRaControls_attributes);
+  LoRaIMUHandle = osThreadNew(LoRaImuTask, NULL, &LoRaIMU_attributes);
+  LoRaGPSHandle = osThreadNew(LoRaGpsTask, NULL, &LoRaGPS_attributes);
+  LoRaBattVoltHandle = osThreadNew(LoRaBattVoltTask, NULL, &LoRaBattVolt_attributes);
+  LoRaBattTempHandle = osThreadNew(LoRaBattTempTask, NULL, &LoRaBattTemp_attributes);
+  LoRaInverterHandle = osThreadNew(LoRaInverterTask, NULL, &LoRaInverter_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -717,14 +836,12 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_DefaultTask */
 /**
-  * @brief  Function implementing the Default thread.
+  * @brief  Function implementing the ADC thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_DefaultTask */
-void DefaultTask(void *argument)
+void AdcTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
@@ -733,6 +850,198 @@ void DefaultTask(void *argument)
     osDelay(1);
   }
   /* USER CODE END 5 */
+}
+
+/**
+* @brief Function implementing the CAN thread.
+* @param argument: Not used
+* @retval None
+*/
+void CanTask(void *argument)
+{
+  /* USER CODE BEGIN CanTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CanTask */
+}
+
+/**
+* @brief Function implementing the LogSD thread.
+* @param argument: Not used
+* @retval None
+*/
+void LogSdTask(void *argument)
+{
+  /* USER CODE BEGIN LogSdTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LogSdTask */
+}
+
+/**
+* @brief Function implementing the GPS thread.
+* @param argument: Not used
+* @retval None
+*/
+void GpsTask(void *argument)
+{
+  /* USER CODE BEGIN GpsTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END GpsTask */
+}
+
+/**
+* @brief Function implementing the StatusLED thread.
+* @param argument: Not used
+* @retval None
+*/
+void StatusLedTask(void *argument)
+{
+  /* USER CODE BEGIN StatusLedTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StatusLedTask */
+}
+
+/**
+* @brief Function implementing the CarControls thread.
+* @param argument: Not used
+* @retval None
+*/
+void CarControlsTask(void *argument)
+{
+  /* USER CODE BEGIN CarControlsTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CarControlsTask */
+}
+
+/**
+* @brief Function implementing the CarDisplay thread.
+* @param argument: Not used
+* @retval None
+*/
+void CarDisplayTask(void *argument)
+{
+  /* USER CODE BEGIN CarDisplayTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CarDisplayTask */
+}
+
+/**
+* @brief Function implementing the LoRaControls thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaControlsTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaControlsTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaControlsTask */
+}
+
+/**
+* @brief Function implementing the LoRaIMU thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaImuTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaImuTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaImuTask */
+}
+
+/**
+* @brief Function implementing the LoRaGPS thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaGpsTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaGpsTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaGpsTask */
+}
+
+/**
+* @brief Function implementing the LoRaBattVolt thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaBattVoltTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaBattVoltTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaBattVoltTask */
+}
+
+/**
+* @brief Function implementing the LoRaBattTemp thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaBattTempTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaBattTempTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaBattTempTask */
+}
+
+/**
+* @brief Function implementing the LoRaInverter thread.
+* @param argument: Not used
+* @retval None
+*/
+void LoRaInverterTask(void *argument)
+{
+  /* USER CODE BEGIN LoRaInverterTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LoRaInverterTask */
 }
 
 /**
